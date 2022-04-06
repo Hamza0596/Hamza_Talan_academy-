@@ -1,0 +1,13 @@
+Algorithme plus grand nombre 
+Variable  pgnmbr,i : entiers
+pgnmbr <--0
+pour i<---1 à 20 faire 
+  
+   afficher("entrer le numero",i)
+   saisir (val)
+   si (val > pgnmbr) 
+   pgnmbr <--val
+finsi
+fin pour 
+afficher("Le plus grand de ces nombres est",pgnmbr)
+fin

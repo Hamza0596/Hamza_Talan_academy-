@@ -1,0 +1,9 @@
+Algorithme les canons
+
+constante nombre de canons : entiers <---24
+constante cadence de tire : entiers <---12.5
+constante temps max de survie : entiers <---35
+debut
+nombre de tire <--(temps max de surv*60)/cadence de tire)*nombre de canons
+afficher("le nombre mxi des tires a supporter egale à ",nombre de tire)
+fin

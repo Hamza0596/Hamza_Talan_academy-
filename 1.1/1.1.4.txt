@@ -1,0 +1,27 @@
+
+Algorithme viser 
+
+variable val,i,X:entier
+         etat:bool
+etat<--faux
+X <-- alea[1..50]
+debut
+i<--0
+Tantque (i<=4)et etat# vrai
+afficher("entrer la position de l'enemie")
+saisir(val)
+si val>x
+   alors   afficher( l'angle est plus petit Entrez à nouveau la position de l'enemi)
+           etat=faux
+si val<x
+   alors afficher( l'angle est plus grand Entrez à nouveau la position de l'enemi) 
+   etat=faux
+
+si val=x
+   alors  afficher(felicitations) 
+          etat=vrai
+
+i<---i+1
+
+fin tanque
+fin
