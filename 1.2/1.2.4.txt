@@ -1,0 +1,21 @@
+algorithme palaindrome
+ 
+  var :  i,j entier
+  c : chaine de carrectere 
+  resultat : boleen
+
+debut
+afficher(donner un nom)
+saisir(c)  
+i=1
+j=longeur(c)
+resultat=vrai
+  tantque (resultat = vrai) et (i<j) faire
+     si c[i]=c[j]
+     alors i=i+1
+          j=j-1
+     si non affiche("non palindrome")
+     resultat = faux;
+     finsi
+  ftantq
+fin 

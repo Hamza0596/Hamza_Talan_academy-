@@ -1,0 +1,33 @@
+Algorithme épees 
+variale i,j : entiers
+T=tableau[1..12] de chaine de car
+T<--["Alban", "Jim", "Bob", "Albatroz", "Jinto", "Bow", "Hijo", "Manu", "Seb", "Teilo", "Charles", "Xavier"]
+
+debut
+
+pour i de 1 à 11 faire
+pour j de 12 à i+1 par pas de -1 faire
+
+p1<--1
+p2<--1
+test<--vrai
+
+tantque (p1<longT[j] ET P2<longT[j-1]+1 et test=vrai)
+   si T[j][p1]<T[j-1][p2] alors
+   echange(T[j],T[J-1])
+   test<-- faux
+   
+   si non si T[j][p1]>T[j-1][p2] alors
+   test<-- faux
+
+   si non 
+    p1<--p1+1
+    p2<-- p2+2
+
+fsi
+fsi
+fin tque
+finpour 
+fin pour
+
+fin
