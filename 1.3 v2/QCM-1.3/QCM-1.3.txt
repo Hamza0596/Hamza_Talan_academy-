@@ -1,0 +1,48 @@
+QCM 1 - Qu'est-ce que Java ?
+d)Un langage de programmation;
+
+QCM 2 - Qu'elle est la particularité du langage Java ?
+c)Un langage fortement typé;
+
+
+QCM 3 - Qu'est-ce qu'une JVM ?
+c)Java Virtual Machine;
+
+
+QCM 4 - Que fait une JVM ?
+b)C'est l'environnement d’exécution de Java;
+
+
+QCM 5 - Qu'est-ce qu'un JDK ?
+e)Elle met à disposition des libraires et des APIs;
+
+QCM 6 - Qu'est-ce que le ByteCode ?
+
+d)Du code compilé;
+e)Du code non compilé;
+
+QCM 7 - Qu'est-ce qu'une class Main ?
+
+a)Le point d'entrée de mon programme;
+
+QCM 8 - Que fait le code
+
+String monMot = "Tintin";
+
+e)Il déclare et initialise une chaîne de caractères contenant "Tintin";
+
+
+QCM 9 - Que fait le code
+
+String monMot = "Tintin";
+System.out.println("monMot");
+d)Il affiche "monMot";
+
+
+QCM 10 - Qu'affiche le code
+
+
+    for(int i = 0; i <= 5; i++){
+        System.out.print(i + " ");
+    }
+d)0 1 2 3 4 5 ;
