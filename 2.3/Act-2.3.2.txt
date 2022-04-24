@@ -1,0 +1,7 @@
+CREATE TYPE grp AS ENUM ('students', 'other', 'staff');
+db_hamza=# CREATE TABLE ft_table(
+db_hamza(# id BIGSERIAL NOT NULL PRIMARY KEY,
+db_hamza(# login VARCHAR(10) DEFAULT 'toto'  NOT NULL,
+db_hamza(# GROUPE grp NOT NULL,
+db_hamza(# date_de_creation DATE NOT NULL);
+CREATE TABLE

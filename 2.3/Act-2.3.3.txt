@@ -1,0 +1,24 @@
+
+
+
+db_hamza=# INSERT INTO ft_table(login,GROUPE,date_de_creation)
+db_hamza-# VALUES(’sacadoux’, ’student’, date ’2014-01-01’);
+INSERT 0 1
+db_hamza=# INSERT INTO ft_table(login,GROUPE,date_de_creation)
+db_hamza-# VALUES(’cahp’, ’staf’, date ’2011-04-27’);
+INSERT 0 1
+db_hamza=# INSERT INTO ft_table(login,GROUPE,date_de_creation)
+db_hamza-# VALUES(’bambou’, ’staf’, date ’2014-04-27’);
+INSERT 0 1
+db_hamza=# INSERT INTO ft_table(login,GROUPE,date_de_creation)
+db_hamza-# VALUES(’fantomet’, ’staf’, date ’2010-04-03');
+INSERT 0 1
+
+
+db_hamza=# SELECT * FROM ft_table;
+ id |  login   | groupe  | date_de_creation
+----+----------+---------+------------------
+  1 | sacadoux | student | 2014-01-01
+  2 | cahp     | staf    | 2011-04-27
+  3 | bambou   | staf    | 2014-04-27
+  4 | fantomet | staf    | 2010-04-03

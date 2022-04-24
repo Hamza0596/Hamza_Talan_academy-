@@ -1,0 +1,7 @@
+create table movies (
+	id INT,
+	titre VARCHAR(50),
+	resum TEXT
+);
+
+db_hamza=# SELECT titre,resum FROM movies where resum LIKE '%vincent%' ;

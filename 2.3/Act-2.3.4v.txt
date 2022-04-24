@@ -1,0 +1,37 @@
+[16:05] Hamza Bouachir
+db_hamza=# SELECT * FROM fiche_personne WHERE ( LENGTH(nom) < 9) AND (nom LIKE '%a%') ORDER BY nom ;
+
+
+
+
+
+db_hamza=# INSERT INTO ft_table(login,date_de_creation)
+db_hamza-# SELECT nom,date_naissance
+db_hamza-# FROM fiche_personne
+db_hamza-# WHERE ( LENGTH(nom) < 9) AND (nom LIKE '%a%') ORDER BY nom ASC LIMIT 10 ;
+
+
+
+db_hamza=# UPDATE ft_table
+db_hamza-# SET groupe='other'
+db_hamza-# WHERE groupe IS NULL;
+
+UPDATE 10
+db_hamza=# SELECT * FROM ft_table;
+ id |  login   |  groupe  | date_de_creation
+----+----------+----------+------------------
+  1 | sacadoux | students | 2014-01-01
+  2 | cahp     | staff    | 2011-04-27
+  3 | bambou   | staff    | 2014-04-27
+  4 | fantomet | staff    | 2010-04-03
+  5 | Adah     | other    | 2021-08-14
+  6 | Aila     | other    | 2021-05-16
+  7 | Arlinda  | other    | 2021-12-29
+  8 | Bethany  | other    | 2021-11-05
+  9 | Birgitta | other    | 2021-11-19
+ 10 | Bran     | other    | 2021-08-06
+ 11 | Brandy   | other    | 2021-06-13
+ 12 | Brena    | other    | 2022-04-05
+ 13 | Burnard  | other    | 2021-09-24
+ 14 | Cariotta | other    | 2021-10-14
+(14 lignes)
