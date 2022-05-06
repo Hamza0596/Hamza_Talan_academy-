@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js For Beginners</title>
+    <link rel="stylesheet" href="Act 3.2.css">
+  
+</head>
+<body>
+    <section class="container" name="form1">
+        <form id="my-form"> 
+            <h1>Add user</h1>
+            <div class="msg"> </div>
+            <div>
+                <label for="name">Nom:*</label>
+                <input type="text" id="name" required minlength="0" maxlength="20"  placeholder="Entre 1 et 20 characteres"> 
+            </div>
+
+            <div>
+                <label for="pname">Prenom:*</label>
+                <input type="text" id="pname" minlength="0" maxlength="15" required placeholder="Entre 1 et 15 charachteres"> 
+            </div>
+
+            <div>
+                <p id="errorage"></p>
+                <label for="birthday">Birthday*:</label>
+                <input type="date" id="birthday" name="date" required  >
+            </div>
+
+            <div>
+                <label for="mail">Email : </label>
+                <input type="text" id="mail" name="email1"> 
+            </div>
+
+            <div>
+                <label for="telnum">NumTel* : </label>
+                <input type="number" id="telnum" required min="0" max="999999999" required placeholder="Entre 1 et 10 chiffres"> 
+            </div>
+
+            <div>
+                <label for="freq" id="az" >Frequence (between 0 and 7):</label>
+                <input type="range" id="freq" name="frequences" min="0" max="7">
+            </div>
+
+
+            <br>
+                <input class="btn" type="submit" value="submit" onclick="calcAge()"> 
+            
+        </form>
+
+    </section>
+    
+    <script src="Act 3.2.js">
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+</body>
+</html>
