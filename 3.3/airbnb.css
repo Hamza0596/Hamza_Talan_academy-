@@ -1,0 +1,335 @@
+body{
+    background:black;
+}
+
+/* HEADER */
+
+header{
+    height: 80px;
+    /* padding: 0px 90px; */
+    box-shadow: 0px 0px 1px 0px #000;
+    background:black;
+    color:white;
+}
+
+header > .links{
+    font-size:16px; 
+    line-height:20px; 
+    font-weight:400;
+}
+
+header > .links > button{
+    border:none;
+    background:none;
+    padding:0px 10px;
+}
+
+header > .links > button > div{
+    position: relative;
+    color:white;
+}
+
+
+header > .links > button:hover > div::before, header > .links > button.active > div::before{
+    content: '';
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left:5%;
+    bottom:-10px;
+}
+
+header > .links > button:hover > div{
+    color:#ccc;
+}
+
+header > .links > button:hover > div::before{
+    background:#ccc;
+}
+
+.search-bar > div{
+    height: 80px;
+    border-radius: 70px;
+    margin:50px;
+}
+
+.search-bar > div > div{
+    border-radius: 30px;
+    height: 80px;
+    background:white;
+    width: 100%;
+    padding:10px 20px;
+    position: relative;
+}
+
+.search-bar > div > div:hover{
+    background:#eee;
+    cursor: pointer;
+}
+
+
+.search-bar > div > div::before{
+    content: '';
+    width:2px;
+    height: 60px;
+    background:#ccc;
+    position: absolute;
+    left:0px;
+}
+
+
+.search-bar > div > div:first-child::before{
+    display: none;
+}
+
+.search-bar > div > div > input {
+    border:none;
+    background:transparent;
+    padding: 10px;
+    outline: #333;
+}
+.search-bar-scroll{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px;
+    background:white;
+    width:300px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px 1px #333;
+    position: fixed;
+    left:50%;
+    top:15px;
+    transform: translate(-50%);
+}
+
+.search-icon{
+    background:#ff385c;
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-scroll > .search-bar > svg{
+    width: 20px;
+    height: 20px;
+}
+
+.search-bar-scroll-active{
+    display: flex;
+    animation: move .6s;
+}
+.navbar-brand{
+margin-left: 10px;
+position: fixed;
+z-index: 1;
+}
+
+ul.navbar-nav {
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+   
+}
+
+
+
+
+.p-5{
+    height: 800px;
+}
+
+.rectangle {
+    margin: auto;
+    height: 500px;
+    width: 90%;
+    background-color: rgb(255, 56, 92);
+    border-radius: 0.3cm ;
+    padding-top: 6cm;
+    color: aliceblue;
+    text-align: center;
+    font-size: xx-large;
+}
+.btn{
+    width: 5cm;
+}
+
+.btn-secondary{
+    width: 5cm;
+    margin-top: 1cm;
+}
+
+
+
+
+ 
+.blockimage{
+    background-image: url("camp.webp");
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    padding-top: 5cm;
+    color: #eee;
+
+}
+.idee{
+    padding-top: 13cm;
+    padding-left: 130px;
+    
+}
+
+.classim1{
+    width: 20.5%;
+    background-color: #ff385c;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 140px;
+    margin-right: 0.5cm;
+    margin-bottom: 2.5cm;
+
+}
+
+.classim1 p{
+    font-weight: bolder;
+}
+
+.classim2{
+    width: 20.5%;
+    background-color: #c97181;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 0.5cm;
+    margin-bottom: 2.5cm;
+
+
+}
+
+.classim2 p{
+    font-weight: bolder;
+}
+
+.classim3{
+    width: 20.5%;
+    background-color: #ffb6c3;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 0.5cm;
+    margin-bottom: 2.5cm;
+
+
+}
+
+.classim3 p{
+    font-weight: bolder;
+}
+
+.classim4{
+    width: 20.5%;
+    background-color: #ffb6c3;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    border-radius: 1cm;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 0.5cm;
+    margin-bottom: 2.5cm;
+
+
+}
+.classim4 p{
+    font-weight: bolder;
+}
+
+
+.expériences{
+   margin-left: 3.5cm;
+}
+
+
+
+
+.classim5{
+    width: 40%;
+    background-image: url(imex1.webp);
+    height:  600px;
+    color: rgb(255, 255, 255);
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 2.5cm;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 3.8cm;
+    margin-right: 1cm;
+
+
+}
+
+.classim6{
+    width: 40%;
+    background-image: url(imex6.webp);
+    height:  600px;
+    color: rgb(255, 255, 255);
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 2.5cm;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 1cm;
+
+
+}
+
+footer {
+    background-color: #F7F7F7;
+    margin-top: 700px;
+}
+
+#footer1,
+#footer2 {
+    display: flex;
+    justify-content: space-around;
+    width: 93%;
+    margin: auto;
+    font-size: 13px;
+}
+
+footer li {
+    list-style: none;
+    margin: 17px 0;
+}
+
+footer h6 {
+    padding-top: 50px;
+    margin-left: 32px;
+}
+
+hr {
+    width: 80%;
+    margin: 25px auto;
+}
+
+#footer2 ul,
+#footer2 ul li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+ 
