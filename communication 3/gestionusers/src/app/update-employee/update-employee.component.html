@@ -1,0 +1,31 @@
+
+
+<div class="col-md-6 offset-md-3" >
+    <h3>Information Update</h3>
+    
+    <form [formGroup]="updatedEmployee" >    
+        <div class="form-group">
+            <label for="first_Name">first_Name</label>
+            <input id="first_Name"  class="form-control"   type="text" formControlName="firstName" placeholder="{{employee.firstName}}">
+        </div>
+    
+        <div class="form-group">
+            <label for="last_Name">last_Name</label>
+            <input id="last_Name"  class="form-control"  type="text" formControlName="lastName" placeholder="{{employee.lastName}}">
+        </div>
+    
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input id="Email" type="text" class="form-control"  formControlName="emailId" >
+        </div>
+
+        <div class="action-buttons">
+            <button type="submit" class="btn btn-success" (click)="saveModification()" (click)="Onreturn()">Save</button>
+           
+        </div>
+    
+      
+       
+        
+    </form>
+    </div>

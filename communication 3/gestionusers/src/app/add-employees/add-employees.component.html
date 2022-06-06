@@ -1,0 +1,27 @@
+ 
+<div class="col-md-6 offset-md-3">
+<h3>Create Employee</h3>
+<form [formGroup]="newEmployee" >    
+    <div class="form-group">
+        <label for="first_Name">first_Name</label>
+        <input id="first_Name"  class="form-control"   type="text" formControlName="firstName">
+    </div>
+
+    <div class="form-group">
+        <label for="last_Name">last_Name</label>
+        <input id="last_Name"  class="form-control"  type="text" formControlName="lastName">
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input id="Email" type="text" class="form-control"  formControlName="emailId">
+    </div>
+
+    <div class="action-buttons">
+        <button type="submit" class="btn btn-success" (click)="saveEmployee()" id="b" [disabled]="newEmployee.invalid">Save</button>
+        <button type="button" class="btn btn-primary" (click)="Onreturn()">Return</button>
+    </div>
+   
+    
+</form>
+</div>
