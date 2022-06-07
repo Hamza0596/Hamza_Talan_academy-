@@ -1,0 +1,9 @@
+id         | 12
+first_name | hamza
+address    | benikhiar
+last_name  | bouachir
+mail       | mailo
+u_password | $2a$12$XAr9DqwGEdijbEJyY4Y/.eklsOpZBHtW.TwLlVpj4ORx/Zrwxm0Ki
+phone      | 999887444
+pseudo     | hamzaa
+roleid     | 3
