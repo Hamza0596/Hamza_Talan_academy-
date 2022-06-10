@@ -1,0 +1,57 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create Employee</h3>
+    <form [formGroup]="newEmployee" >    
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input id="Name"  class="form-control"   type="text" formControlName="name">
+        </div>
+    
+        <div class="form-group">
+            <label for="email">email</label>
+            <input id="email"  class="form-control"  type="text" formControlName="email">
+        </div>
+    
+        <div class="form-group" >
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <label>JobTitle</label>
+                <select class="form-control form-control-lg"  name="idCat" formControlName="jobTitle">
+                    <option value="Ingenieur Type A"> Ingenieur Type A</option>
+                    <option value="Ingenieur Type B"> Ingenieur Type B</option> 
+                    <option value="Ingenieur Type C">Ingenieur Type C </option>     
+                </select>
+            </div> 
+        </div>
+
+
+        <div class="form-group" >
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <label>TypeCnss</label>
+                <select class="form-control form-control-lg"   formControlName="categoryCnss">
+                    <option *ngFor="let cat of AllCategoryCnss" [ngValue]="cat" > {{cat.type}}</option>
+            
+                </select>
+            </div> 
+        </div>
+        
+
+        <div class="form-group">
+            <label for="phone">phone</label>
+            <input id="phone" type="text" class="form-control"  formControlName="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="employeeCode">employeeCode</label>
+            <input id="employeeCode" type="text" class="form-control"  formControlName="employeeCode">
+        </div>
+
+      
+
+
+
+        <div class="action-buttons">
+            <button type="submit" class="btn btn-success" (click)="addemployee()" id="b" [disabled]="newEmployee.invalid">Save</button>
+        
+        </div>
+
+    </form>
+    </div>

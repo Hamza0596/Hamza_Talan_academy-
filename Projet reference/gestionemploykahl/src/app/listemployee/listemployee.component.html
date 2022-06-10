@@ -1,0 +1,43 @@
+<h1>listemployee works!</h1>
+
+<br>
+<br>
+<br>
+
+
+<table class="table table-striped">
+    <thead>
+<tr>
+    <th> Name</th>
+    <th>email</th>
+    <th>jobTitle</th>
+    <th>phone</th>
+    <th>employeeCode</th>
+    <th>categoryCnss</th>
+    <th>Action</th>
+    
+</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.jobTitle}}</td>
+            <td>{{employee.phone}}</td>
+            <td>{{employee.employeeCode}}</td> 
+            <td>{{employee.categoryCnss.id}}</td> 
+            <td>
+                <button type="button" class="btn btn-warning" id="a" (click)="updateEmployeEvent(employee.id)" >Update</button>
+
+                <button type="button" class="btn btn-danger"(click)="deleteEmployee(employee.id)" >Delete</button>
+
+            </td> 
+
+            
+            
+        </tr>
+    </tbody>
+
+</table>
+
