@@ -19,10 +19,12 @@ public class Reservation {
 	@ManyToOne @JoinColumn(name="userId" )
 	private User  user;
 	private Date date;
+	private boolean confirmed;
 	
 	
 
 	public Reservation() {
+		this.confirmed=false;
 	
 	}
 	
@@ -30,13 +32,10 @@ public class Reservation {
 		this.price = price;
 		this.user = user;
 		this.date = date;
+		this.confirmed=false;
 	}
 	
-	public Reservation(double price , Date date) {
-		this.price = price;
-	
-		this.date = date;
-	}
+
 	
 	public Reservation(Long id, double price, User user, Date date) {
 	
@@ -44,6 +43,7 @@ public class Reservation {
 		this.price = price;
 		this.user = user;
 		this.date = date;
+		this.confirmed=false;
 	}
 	
 	
@@ -70,6 +70,16 @@ public class Reservation {
 	}
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	
+	
+
+	public boolean isConfirmed() {
+		return confirmed;
+	}
+
+	public void setConfirmed(boolean confirmed) {
+		this.confirmed = confirmed;
 	}
 
 	@Override
